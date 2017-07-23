@@ -5,6 +5,12 @@ function New-EmployeeUserAccount {
     Interactive Function Automates Active Directory User and Mailbox Creation.
 .DESCRIPTION
     Interactive Function Automates Active Directory User and Mailbox Creation.
+    It accepts user input for three (3) required string parameters, the first name, last name and department. 
+    The department is selected from a GUI drop down list box. 
+    The function checks to see if the user already exists.
+    If so, the script stops and sends a message to the console. 
+    The Active Directory account is created in a specific organizational unit based on the department selection, 
+    the account is mailbox enabled and email notification is sent to the team.
 .PARAMETER Eventids
     Array of event ids to be audited and reported on.
 .PARAMETER Smtpserver
