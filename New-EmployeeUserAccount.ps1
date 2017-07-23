@@ -11,16 +11,9 @@ function New-EmployeeUserAccount {
     If so, the script stops and sends a message to the console. 
     The Active Directory account is created in a specific organizational unit based on the department selection, 
     the account is mailbox enabled and email notification is sent to the team.
-.PARAMETER Eventids
-    Array of event ids to be audited and reported on.
-.PARAMETER Smtpserver
-    Smtp Server for processing email.
-.PARAMETER From
-    From email address.
-.PARAMETER To
-    To email address.
+
 .EXAMPLE
-    Get-ADAuditLogsv2
+    New-EmployeeUserAccount
        
 .FUNCTIONALITY
     PowerShell Language
